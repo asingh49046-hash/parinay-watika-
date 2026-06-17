@@ -1,7 +1,6 @@
-# Parinay Watika Final Premium Website
+# Parinay Watika Final Premium Website - Fixed
 
-Open `index.html` to run locally.
-
-Map location kept at: 26.1533341, 85.3996488 (Parinay Vatika).
-
-Update social links in footer/navbar if needed.
+Vercel upload ke liye isi folder ke andar wali files upload karein.
+Root level par index.html, css, js, assets folder hona chahiye.
+Map location same rakha gaya hai: 26.1533341, 85.3996488.
+Logo sirf navbar aur footer me use kiya gaya hai.
