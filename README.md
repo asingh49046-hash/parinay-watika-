@@ -1,1 +1,1 @@
-Parinay Watika final code. Website layout unchanged; only logo replaced with the new gold logo. Deploy this root folder on Vercel.
+Parinay Watika final single-file website. CSS, JS and logo are embedded in index.html, so Vercel path/CSS/logo loading error will not happen. Upload/deploy this folder or only index.html.
