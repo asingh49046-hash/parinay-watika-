@@ -1,1 +1,1 @@
-Parinay Watika final one-file website. Upload index.html directly to Vercel/GitHub. CSS, JS and logo are embedded, so path error will not happen. Map location is unchanged.
+Parinay Watika final code. Website layout unchanged; only logo replaced with the new gold logo. Deploy this root folder on Vercel.

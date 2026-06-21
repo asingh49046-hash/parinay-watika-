@@ -1,1 +1,9 @@
-const menuBtn=document.getElementById('menuBtn');const navMenu=document.getElementById('navMenu');if(menuBtn){menuBtn.addEventListener('click',()=>navMenu.classList.toggle('active'))}const form=document.getElementById('bookingForm');if(form){form.addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('name').value;const phone=document.getElementById('phone').value;const type=document.getElementById('eventType').value;const date=document.getElementById('eventDate').value;const guests=document.getElementById('guests').value;const msg=document.getElementById('message').value;const text=`Hello Parinay Watika, I want to book your venue.%0AName: ${name}%0APhone: ${phone}%0AEvent: ${type}%0ADate: ${date}%0AGuests: ${guests}%0AMessage: ${msg}`;window.open(`https://wa.me/918603371910?text=${text}`,'_blank')})}
+const menuBtn=document.getElementById('menuBtn'), navMenu=document.getElementById('navMenu');
+    menuBtn.addEventListener('click',()=>navMenu.classList.toggle('active'));
+    document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>navMenu.classList.remove('active')));
+    document.getElementById('bookingForm').addEventListener('submit',function(e){
+      e.preventDefault();
+      const data={name:document.getElementById('name').value,phone:document.getElementById('phone').value,eventType:document.getElementById('eventType').value,eventDate:document.getElementById('eventDate').value,guests:document.getElementById('guests').value,message:document.getElementById('message').value};
+      const txt=`Hello Parinay Watika, I want to enquire about booking.%0AName: ${data.name}%0APhone: ${data.phone}%0AEvent: ${data.eventType}%0ADate: ${data.eventDate}%0AGuests: ${data.guests}%0AMessage: ${data.message}`;
+      window.open('https://wa.me/918603371910?text='+txt,'_blank');
+    });
